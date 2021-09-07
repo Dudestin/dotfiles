@@ -5,6 +5,7 @@ set softtabstop=3
 set autoindent
 set smartindent
 set clipboard=exclude:.*
+inoremap <silent> jj <ESC>
 filetype indent on
 filetype plugin indent on
 let g:gruvbox_termcolors = '16'
