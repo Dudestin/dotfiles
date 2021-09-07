@@ -156,4 +156,5 @@ export IDF_PATH=$HOME/esp-idf-v4.0.3
 
 eval "$(starship init bash)"
 
+# manage dotfile on git
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
