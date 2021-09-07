@@ -1,3 +1,15 @@
+set nocompatible
+filetype plugin indent off
+
+if has('vim_starting')
+    set runtimepath+=~/.vim/bundle/neobundle.vim
+    call neobundle#begin(expand('~/.vim/bundle'))
+endif
+
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+filetype plugin indent on
+
 set expandtab
 set tabstop=4
 set shiftwidth=4
@@ -17,7 +29,5 @@ set visualbell t_vb=
 set noerrorbells
 set scrolloff=5
 inoremap <silent> jj <ESC>
-filetype indent on
-filetype plugin indent on
 let g:gruvbox_termcolors = '16'
 colorscheme gruvbox
