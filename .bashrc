@@ -116,8 +116,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export CPLUS_INCLUDE_PATH=:/home/dudestin/boost/include
-export LIBRARY_PATH=:/home/dudestin/boost/lib
+export CPLUS_INCLUDE_PATH=:$HOME/boost/include
+export LIBRARY_PATH=:$HOmE/boost/lib
 
 export CC=gcc-10
 export CXX=g++-10
@@ -129,19 +129,19 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 export PATH="$PATH:`pwd`/flutter/bin"
-export PATH="$PATH:/home/dudestin/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 alias ec='emacsclient --c || (emacs --daemon;emacsclient --c)'
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/dudestin/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('$HOME/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/dudestin/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/dudestin/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "$HOME/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "$HOME/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/home/dudestin/anaconda3/bin:$PATH"
+        export PATH="$HOME/anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -149,10 +149,10 @@ unset __conda_setup
 
 export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
-export PYTHONPATH=/home/dudestin/anaconda3/pkgs/vai_q_tensorflow-1.0-py36hd844fa7_1/lib/python3.6/site-packages:$PYTHONPATH
+export PYTHONPATH=$HOME/anaconda3/pkgs/vai_q_tensorflow-1.0-py36hd844fa7_1/lib/python3.6/site-packages:$PYTHONPATH
 
 alias get_idf='. $HOME/esp-idf-v4.0.3/export.sh'
-export IDF_PATH=/home/dudestin/esp-idf-v4.0.3
+export IDF_PATH=$HOME/esp-idf-v4.0.3
 
 eval "$(starship init bash)"
 
