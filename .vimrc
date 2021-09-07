@@ -30,17 +30,6 @@ if dein#check_install()
 endif
 
 "End dein Scripts-------------------------
-set nocompatible
-filetype plugin indent off
-
-if has('vim_starting')
-    set runtimepath+=~/.vim/bundle/neobundle.vim
-    call neobundle#begin(expand('~/.vim/bundle'))
-endif
-
-NeoBundleFetch 'Shougo/neobundle.vim'
-
-filetype plugin indent on
 
 set expandtab
 set tabstop=3
