@@ -7,3 +7,5 @@ set smartindent
 set clipboard=exclude:.*
 filetype indent on
 filetype plugin indent on
+let g:gruvbox_termcolors = '16'
+colorscheme gruvbox
